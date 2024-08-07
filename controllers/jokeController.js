@@ -15,7 +15,7 @@ async function getJokes() {
 
 async function getJoke(id) {
     try{
-        const joke = await Joke.getByid(id);
+        const joke = await Joke.getByID(id);
     }catch (error){
         console.log(error);
         return null;

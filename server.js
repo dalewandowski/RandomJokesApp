@@ -1,6 +1,7 @@
 
 const http = require("http");
 const  {getJokes, getJoke, getRandom} = require("./controllers/jokeController");
+const { getByID } = require("./model/jokeModel");
 
 const port = 8080;
 const API_CONTENT_TYPE = {"Content-type" : "application/json"};
@@ -35,10 +36,25 @@ const server = http.createServer(
                 joke = { message : "Joke Not Found"}
             }
             res.end(JSON.stringify(joke));
-        };
-        
+        } else 
+        if (req.url.match(/\api\/jokes\/([0-9]+)/) && req.method === "GET"){
+            const id  = req.url.split("/")[3]
+
+            let joke = await getJoke(id)
+            
+            if (joke){
+                res.writeHead(200, API_CONTENT_TYPE)
+            } else {
+                res.writeHead(404, API_CONTENT_TYPE) 
+                joke = {message : "Joke Not Found"}
+            }
+            res.end(JSON.stringify(joke))
+        }
     }
 );
 
+
+ 
+ 
 server.listen(port)
 
