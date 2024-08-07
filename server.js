@@ -2,6 +2,7 @@
 const http = require("http");
 const  {getJokes, getJoke, getRandom} = require("./controllers/jokeController");
 const { getByID } = require("./model/jokeModel");
+const {servStaticFile} = require("./util/staticServer")
 
 const port = 8080;
 const API_CONTENT_TYPE = {"Content-type" : "application/json"};
@@ -9,7 +10,7 @@ const API_CONTENT_TYPE = {"Content-type" : "application/json"};
 const server = http.createServer(
     async function(req,res) {
         console.log("refresh");
-
+           ///////////// get all jokes ////////////////
         if (req.url === "/api/jokes" && req.method === "GET"){
             let jokes = await getJokes();
 
@@ -22,7 +23,7 @@ const server = http.createServer(
             }
 
             res.end(JSON.stringify(jokes));
-            
+            //////////////// get random joke /////////////////////
         } else 
         if (req.url === "/api/jokes/random" && req.method === "GET")
         {
@@ -36,11 +37,12 @@ const server = http.createServer(
                 joke = { message : "Joke Not Found"}
             }
             res.end(JSON.stringify(joke));
+            ////////////////////get joke byID ///////////////////////
         } else 
         if (req.url.match(/\api\/jokes\/([0-9]+)/) && req.method === "GET"){
             const id  = req.url.split("/")[3]
 
-            let joke = await getJoke(id)
+            let joke = await getJoke(id);
             
             if (joke){
                 res.writeHead(200, API_CONTENT_TYPE)
@@ -49,12 +51,18 @@ const server = http.createServer(
                 joke = {message : "Joke Not Found"}
             }
             res.end(JSON.stringify(joke))
+        } else {
+            servStaticFile(req, res);
         }
+
     }
 );
 
 
  
  
-server.listen(port)
+server.listen(port, () => {
+    console.log("Server is running on port: ", port);
+    
+})
 

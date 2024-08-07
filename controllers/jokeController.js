@@ -16,6 +16,7 @@ async function getJokes() {
 async function getJoke(id) {
     try{
         const joke = await Joke.getByID(id);
+        return joke;
     }catch (error){
         console.log(error);
         return null;
@@ -28,7 +29,7 @@ async function getRandom() {
         const jokes = await getJokes();
        
         if (jokes) {
-            return jokes[Math.floor(Math.random() * jokes.lenght)]
+            return jokes[Math.floor(Math.random() * jokes.length)]
         } else {
             return null;
         }
