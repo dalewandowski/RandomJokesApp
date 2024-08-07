@@ -1,0 +1,46 @@
+
+
+const Joke = require("../model/jokeModel")
+
+async function getJokes() {
+    try{
+        const jokes = await Joke.getAll();
+        return jokes;
+    } catch (error) {
+        console.log(error);
+        return null;
+        
+    };
+}
+
+async function getJoke(id) {
+    try{
+        const joke = await Joke.getByid(id);
+    }catch (error){
+        console.log(error);
+        return null;
+        
+    }
+};
+    
+async function getRandom() {
+    try{
+        const jokes = await getJokes();
+       
+        if (jokes) {
+            return jokes[Math.floor(Math.random() * jokes.lenght)]
+        } else {
+            return null;
+        }
+    }catch (error){
+    console.log(error);
+    return null;
+    }
+    
+}
+
+module.exports = {
+    getJokes,
+    getJoke,
+    getRandom
+}
