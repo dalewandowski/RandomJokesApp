@@ -1,8 +1,8 @@
 
 const http = require("http");
 const  {getJokes, getJoke, getRandom} = require("./controllers/jokeController");
-const { getByID } = require("./model/jokeModel");
-const {servStaticFile} = require("./util/staticServer")
+
+const {serveStaticFile} = require("./util/staticServer")
 
 const port = 8080;
 const API_CONTENT_TYPE = {"Content-type" : "application/json"};
@@ -52,7 +52,7 @@ const server = http.createServer(
             }
             res.end(JSON.stringify(joke))
         } else {
-            servStaticFile(req, res);
+            serveStaticFile (req, res);
         }
 
     }
