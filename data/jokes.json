@@ -1,123 +1,34 @@
- [
-    {
-      "id": 1,
-      "tekst": "Dlaczego komputer nie lubi gorącej kawy? Bo się parzy!"
-    },
-    {
-      "id": 2,
-      "tekst": "Co robi krowa na lodzie? Muuuje się!"
-    },
-    {
-      "id": 3,
-      "tekst": "Dlaczego matematyk nie może znaleźć pracy? Bo ciągle ma tylko sinusoidy!"
-    },
-    {
-      "id": 4,
-      "tekst": "Co robi komar na rowerze? Pije krew w ruchu!"
-    },
-    {
-      "id": 5,
-      "tekst": "Dlaczego woda nigdy nie ma urodzin? Bo zawsze jest płynna!"
-    },
-    {
-      "id": 6,
-      "tekst": "Jak się nazywa królik w okularach? Widok!"
-    },
-    {
-      "id": 7,
-      "tekst": "Dlaczego programista nie może znaleźć swojego błędu? Bo zawsze szuka go w niewłaściwym miejscu!"
-    },
-    {
-      "id": 8,
-      "tekst": "Dlaczego drzewo zawsze się gubi w lesie? Bo ma za dużo gałęzi!"
-    },
-    {
-      "id": 9,
-      "tekst": "Co mówi jeden telefon do drugiego? Dzwonimy się później!"
-    },
-    {
-      "id": 10,
-      "tekst": "Dlaczego komputer zawsze ma zimne ręce? Bo często łapie wirusy!"
-    },
-    {
-      "id": 11,
-      "tekst": "Jak się nazywa ptak, który zawsze się spóźnia? Powtór!"
-    },
-    {
-      "id": 12,
-      "tekst": "Dlaczego pianista nie lubi prania? Bo nie chce mieć klawiatury w pianie!"
-    },
-    {
-      "id": 13,
-      "tekst": "Co robi pies, kiedy jest zimno? Siedzi w budzie, żeby się ogrzać!"
-    },
-    {
-      "id": 14,
-      "tekst": "Dlaczego rower nie może jechać na dwóch kołach? Bo jedno jest zepsute!"
-    },
-    {
-      "id": 15,
-      "tekst": "Co mówi ślimak na motorze? Ale jazda!"
-    },
-    {
-      "id": 16,
-      "tekst": "Dlaczego zegarek nigdy nie kłamie? Bo zawsze mówi prawdę!"
-    },
-    {
-      "id": 17,
-      "tekst": "Dlaczego komputer nie gra w piłkę nożną? Bo nie ma nóg!"
-    },
-    {
-      "id": 18,
-      "tekst": "Co mówi kot, który gra na gitarze? Miauczysz, a ja gram!"
-    },
-    {
-      "id": 19,
-      "tekst": "Dlaczego jabłko nigdy nie idzie na imprezę? Bo jest za kwaśne!"
-    },
-    {
-      "id": 20,
-      "tekst": "Co robi krowa, kiedy chce się schować? Ucieka w tłum!"
-    },
-    {
-      "id": 21,
-      "tekst": "Dlaczego samochód zawsze jest głodny? Bo ma bak!"
-    },
-    {
-      "id": 22,
-      "tekst": "Co robią dwa koty na dachu? Kocią rozmowę!"
-    },
-    {
-      "id": 23,
-      "tekst": "Dlaczego komputer zawsze się psuje, kiedy jest potrzebny? Bo nie chce pracować!"
-    },
-    {
-      "id": 24,
-      "tekst": "Dlaczego zegar nigdy nie śpi? Bo musi trzymać czas!"
-    },
-    {
-      "id": 25,
-      "tekst": "Co mówi ptak do ryby? Ale masz mokro!"
-    },
-    {
-      "id": 26,
-      "tekst": "Dlaczego słoń nigdy nie chowa się pod stołem? Bo się nie mieści!"
-    },
-    {
-      "id": 27,
-      "tekst": "Dlaczego lampa nie świeci? Bo jest wyłączona!"
-    },
-    {
-      "id": 28,
-      "tekst": "Co robi papuga na lotnisku? Czeka na lot!"
-    },
-    {
-      "id": 29,
-      "tekst": "Dlaczego pies nigdy nie nosi butów? Bo nie ma nóg!"
-    },
-    {
-      "id": 30,
-      "tekst": "Dlaczego komputer nigdy nie śni? Bo nigdy nie zasypia!"
-    }
-  ]
-
+[
+  {
+    "id": 0,
+    "text": "Two SQL tables sit at the bar. A query approaches and asks 'Can I join you?'"
+  },
+  {
+    "id": 1,
+    "text": "I was struggling to figure out how lightning works, but then it struck me."
+  },
+  {
+    "id": 2,
+    "text": "The generation of random numbers is too important to be left to chance."
+  },
+  {
+    "id": 4,
+    "text": "Java and C were telling jokes. It was C's turn, so he writes something on the wall, points to it and says 'Do you get the reference?' But Java didn't."
+  },
+  {
+    "id": 5,
+    "text": "If Bill had a dime for every time Windows crashed ... Oh wait, he does."
+  },
+  {
+    "id": 6,
+    "text": "Have a great weekend! I hope your code behaves the same on Monday as it did on Friday."
+  },
+  {
+    "id": 7,
+    "text": "Knock knock. Who's there? Recursion. Recursion who? Knock knock."
+  },
+  {
+    "id": 8,
+    "text": "How do you tell HTML from HTML5? - Try it out in Internet Explorer - Did it work? - No? - It's html5."
+  }
+]

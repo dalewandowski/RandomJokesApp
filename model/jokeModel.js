@@ -1,26 +1,25 @@
 
-let jokes = require("../data/jokes.json");
-
+const jokes = require("../data/jokes.json");
 
 function getAll() {
-    return new Promise((resolve, reject) => {
+    return new Promise( (resolve, reject) => {
         resolve(jokes);
-    });
+    } );
 }
 
-function getByID(id){
-    return new Promise((resolve, reject) => {
-        const joke = jokes.find(j => j.id === parseInt(id))
+function getById(id) {
+    return new Promise( (resolve, reject) => {
+        const joke = jokes.find( j => j.id === parseInt(id) );
 
         if (joke) {
             resolve(joke);
         } else {
-            reject("Joke with id: " + id + " not found")
+            reject("Joke with id:" + id + " not found ");
         }
-    });
+    } );
 }
 
 module.exports = {
     getAll,
-    getByID
+    getById
 }
